@@ -47,12 +47,27 @@ button {
     font-family: monospace;
     color: black;
 }
-
-.test
+.Sin
+{
+    font-weight: bold;
+    background-color: rgb(38, 172, 38);
+}
+.Tan
 {
     font-weight: bold;
     background-color: rgb(38, 172, 38); 
 }
+.Cos
+{
+    font-weight: bold;
+    background-color: rgb(38, 172, 38); 
+}
+.Sqr
+{
+    font-weight: bold;
+    background-color: rgb(38, 172, 38); 
+}
+
 #zero {
     grid-column: span 2;
 }
