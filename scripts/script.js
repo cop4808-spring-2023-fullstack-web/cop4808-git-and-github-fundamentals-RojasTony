@@ -64,16 +64,19 @@ function clickButton() {
                 inputTangent(displayValue);
                 updateDisplay();
             }
+            //Calls function for Sin
             else if(buttons[i].classList.contains('Sin'))
             {
                 inputSin(displayValue);
                 updateDisplay();
             }
+            //Calls function for Cos
             else if(buttons[i].classList.contains('Cos'))
             {
                 inputCos(displayValue);
                 updateDisplay();
             }
+            //Calls function for Square Root
             else if(buttons[i].classList.contains('Sqr'))
             {
                 inputSqr(displayValue);
@@ -223,6 +226,16 @@ function inputTangent(num)
 function inputSin(num)
 {
     displayValue = (Math.sin(num)).toString();
+}
+//Function For Cos
+function inputCos(num)
+{
+    displayValue = (Math.cos(num)).toString();
+}
+//Function For Square Root
+function inputSqr(num)
+{
+    displayValue = Math.sqrt(displayValue);
 }
 function roundAccurately(num, places) 
 {
