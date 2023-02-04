@@ -58,10 +58,25 @@ function clickButton() {
                 clearDisplay();
                 updateDisplay();
             }
-            // Calls function for tangent
-            else if(buttons[i].classList.contains('test'))
+            // Calls function for Tangent
+            else if(buttons[i].classList.contains('Tan'))
             {
                 inputTangent(displayValue);
+                updateDisplay();
+            }
+            else if(buttons[i].classList.contains('Sin'))
+            {
+                inputSin(displayValue);
+                updateDisplay();
+            }
+            else if(buttons[i].classList.contains('Cos'))
+            {
+                inputCos(displayValue);
+                updateDisplay();
+            }
+            else if(buttons[i].classList.contains('Sqr'))
+            {
+                inputSqr(displayValue);
                 updateDisplay();
             }
         }
@@ -204,7 +219,11 @@ function inputTangent(num)
 {
     displayValue = (Math.tan(num)).toString();
 }
-
+//Function For Sin
+function inputSin(num)
+{
+    displayValue = (Math.sin(num)).toString();
+}
 function roundAccurately(num, places) 
 {
     return parseFloat(Math.round(num + 'e' + places) + 'e-' + places);
