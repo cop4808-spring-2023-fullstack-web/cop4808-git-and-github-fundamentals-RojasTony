@@ -24,26 +24,46 @@ updateDisplay();
 function clickButton() {
     for(let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', function() {
-            if(buttons[i].classList.contains('operand')) {
+            if(buttons[i].classList.contains('operand')) 
+            {
                 inputOperand(buttons[i].value);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('operator')) {
+            } 
+            else if(buttons[i].classList.contains('operator')) 
+            {
                 inputOperator(buttons[i].value);
-            } else if(buttons[i].classList.contains('equals')) {
+            } 
+            else if(buttons[i].classList.contains('equals')) 
+            {
                 inputEquals();
                 updateDisplay();
-            } else if(buttons[i].classList.contains('decimal')) {
+            } 
+            else if(buttons[i].classList.contains('decimal')) 
+            {
                 inputDecimal(buttons[i].value);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('percent')) {
+            } 
+            else if(buttons[i].classList.contains('percent')) 
+            {
                 inputPercent(displayValue);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('sign')) {
+            } 
+            else if(buttons[i].classList.contains('sign')) 
+            {
                 inputSign(displayValue);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('clear'))
+            } 
+            else if(buttons[i].classList.contains('clear'))
+            {
                 clearDisplay();
                 updateDisplay();
+            }
+            // Calls function for tangent
+            else if(buttons[i].classList.contains('test'))
+            {
+                inputTangent(displayValue);
+                updateDisplay();
+            }
         }
     )}
 }
@@ -179,6 +199,13 @@ function operate(x, y, op) {
     }
 }
 
-function roundAccurately(num, places) {
+//Function For Tangent.
+function inputTangent(num)
+{
+    displayValue = (Math.tan(num)).toString();
+}
+
+function roundAccurately(num, places) 
+{
     return parseFloat(Math.round(num + 'e' + places) + 'e-' + places);
 }
