@@ -48,7 +48,11 @@ button {
     color: black;
 }
 
-
+.test
+{
+    font-weight: bold;
+    background-color: rgb(38, 172, 38); 
+}
 #zero {
     grid-column: span 2;
 }
