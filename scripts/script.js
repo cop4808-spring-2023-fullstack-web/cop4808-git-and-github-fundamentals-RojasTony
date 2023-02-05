@@ -76,10 +76,10 @@ function clickButton() {
                 inputCos(displayValue);
                 updateDisplay();
             }
-            //Calls function for Square Root
-            else if(buttons[i].classList.contains('Sqr'))
+            //Calls function for Log
+            else if(buttons[i].classList.contains('Log'))
             {
-                inputSqr(displayValue);
+                inputLog(displayValue);
                 updateDisplay();
             }
         }
@@ -232,10 +232,10 @@ function inputCos(num)
 {
     displayValue = (Math.cos(num)).toString();
 }
-//Function For Square Root
-function inputSqr(num)
+//Function For Log
+function inputLog(num)
 {
-    displayValue = Math.sqrt(displayValue);
+    displayValue = (Math.log10(num)).toString();
 }
 function roundAccurately(num, places) 
 {
