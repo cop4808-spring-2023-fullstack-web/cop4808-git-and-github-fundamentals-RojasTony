@@ -47,6 +47,16 @@ button {
     font-family: monospace;
     color: black;
 }
+
+#zero 
+{
+    grid-column: span 2;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+}
 .Sin
 {
     font-weight: bold;
@@ -68,11 +78,8 @@ button {
     background-color: rgb(38, 172, 38); 
 }
 
-#zero {
-    grid-column: span 2;
-}
-
-.operator {
+.operator 
+{
     background-color: #FF8F1F;    
 }
 
